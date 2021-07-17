@@ -1,0 +1,157 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>catering management- About Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="{% static 'catering/css/templatemo-style.css'%}" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'catering/images/simple-house-01.jpg'%}">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="{% static 'catering/images/simple-house-logo.png'%}" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Catering Management</h1>
+								<h6 class="tm-site-description">new restaurant template</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="{% url 'index'%}" class="tm-nav-link">Home</a></li>
+								<li class="tm-nav-li"><a href="{% url 'about'%}" class="tm-nav-link active">About</a></li>
+								<li class="tm-nav-li"><a href="{% url 'contact'%}" class="tm-nav-link">Contact</a></li>
+								<li class="tm-nav-li"><a href="{% url 'signup'%}" class="tm-nav-link">Signup</a></li>
+								<li class="tm-nav-li"><a href="{% url 'login'%}" class="tm-nav-link">Login</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">About Catering Management</h2>
+				<p class="col-12 text-center">This is about page of Catering Management template. 
+                You can modify and use this HTML template for your website. Total 3 HTML pages included in this template. Header image has a parallax effect.</p>
+			</header>
+
+			<div class="tm-container-inner tm-persons">
+				<div class="row">
+					<article class="col-lg-6">
+						<figure class="tm-person">
+							<img src="{% static 'catering/images/about-01.jpg'%}" alt="Image" class="img-fluid tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name">Ulfat Amin</h4>
+								<p class="tm-person-title">Founder and CEO</p>
+								
+								<div>
+									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-6">
+						<figure class="tm-person">
+							<img src="{% static 'catering/images/about-02.jpg'%}" alt="Image" class="img-fluid tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name">Tayyba Iqbal</h4>
+								<p class="tm-person-title">Executive Chef</p>
+								
+								<div>
+									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-6">
+						<figure class="tm-person">
+							<img src="{% static 'catering/images/about-03.JPG'%}" alt="Image" class="img-fluid tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name">M  Muneeb</h4>
+								<p class="tm-person-title">Kitchen Manager</p>
+								
+								<div>
+									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-6">
+						<figure class="tm-person">
+							<img src="{% static 'catering/images/about-04.JPG'%}" alt="Image" class="img-fluid tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name">Ahmad Zia</h4>
+								<p class="tm-person-title">Culinary Director</p>
+								
+								<div>
+									<a href="https://fb.com" class="tm-social-link"><i class="fab fa-facebook tm-social-icon"></i></a>
+									<a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter tm-social-icon"></i></a>
+									<a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram tm-social-icon"></i></a>
+									<a href="https://youtube.com" class="tm-social-link"><i class="fab fa-youtube tm-social-icon"></i></a>
+								</div>
+							</figcaption>
+						</figure>
+					</article>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-featured-image">
+				<div class="row">
+					<div class="col-12">
+						<div class="placeholder-2">
+							<div class="parallax-window-2" data-parallax="scroll" data-image-src="{% static 'catering/images/about-05.jpg"></div>		
+						</div>
+					</div>
+				</div>
+			</div>
+			
+					
+			<div class="tm-container-inner tm-history">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-history-inner">
+							<img src="{% static 'catering/images/about-06.jpg'%}" alt="Image" class="img-fluid tm-history-img" />
+							<div class="tm-history-text"> 
+								<h4 class="tm-history-title">History of our restaurant</h4>
+								<p class="tm-mb-p">Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet justo. Maecenas posuere lorem id augue interdum vehicula. Praesent sed leo eget libero ultricies congue.</p>
+								<p>Redistributing this template as a downloadable ZIP file on any template collection site is strictly prohibited. You will need to <a href="https://templatemo.com/contact">contact TemplateMo</a> for additional permissions about our templates. Thank you.</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2020 Simple House 
+            
+            | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+		</footer>
+	</div>
+	<script src="{% static 'catering/js/jquery.min.js'%}"></script>
+	<script src="{% static 'catering/js/parallax.min.js'%}"></script>
+</body>
+</html>

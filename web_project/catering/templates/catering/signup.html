@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>catering management</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+    <link href="{% static 'catering/css/templatemo-style.css'%}" rel="stylesheet" />
+  </head>
+
+  <body>
+<div style="background-color:powderblue; height:100%;">
+<div class="form_wrapper" style="text-align: center;padding-top: 110px;">
+    <div class="form_container">
+            <div class="row clearfix" >
+        <div class="">
+          <form class="bg-white  rounded-5 shadow-5-strong p-5 "id="contact" action="" method="POST">
+            {% csrf_token %}>
+            <h1>Signup</h1>
+            <div class="input_field" style="padding-right: 55px;"> <label >Username</label><span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input type="Username" name="Username" placeholder="Username" required />
+            </div>
+            <br>
+            <div class="input_field" style="padding-right: 35px;"><label>Email</label> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="Email" name="Email" placeholder="Email" required />
+            </div>
+            <br>
+            <div class="input_field" style="padding-right: 70px;"><label>Password1</label> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="password1" name="password1" placeholder="Password1" required />
+            </div>
+            <br>
+            <div class="input_field" style="padding-right: 70px;"><label>Password2</label> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+              <input type="password2" name="password2" placeholder="Password2" required />
+            </div>
+            <br>
+                  <div class="input_field radio_option">
+                <input type="radio" name="radiogroup1" id="rd1">
+                <label for="rd1">Male</label>
+                <input type="radio" name="radiogroup1" id="rd2">
+                <label for="rd2">Female</label>
+                </div>
+                <br>
+                <div class="input_field select_option">
+                  <select>
+                    <option>Select a country</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                  </select>
+                  <div class="select_arrow"></div>
+                </div>
+                <br>
+              <div class="input_field checkbox_option">
+                  <input type="checkbox" id="cb1">
+                  <label for="cb1">I agree with terms and conditions</label>
+              </div>
+              <div class="input_field checkbox_option">
+                  <input type="checkbox" id="cb2">
+                  <label for="cb2">I want to receive the newsletter</label>
+              </div>
+              <br>
+            <input class="button" type="submit" value="signup" />
+            <input class="button" type="submit" value="login" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+  </body>
+</html>
+  

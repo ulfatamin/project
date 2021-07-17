@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+{% load cart_tag %}
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>catering management</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="{% static 'catering/css/templatemo-style.css'%}" rel="stylesheet" />
+</head>
+<body>
+    <table>
+        <tr>
+            {% for key,value in request.session.cart.items %}
+            <td><img src="{{value.image}}" height="200" width="250" /> </td>
+            <td>  {{value.name}} </td>
+            <td><a href="{% url 'item_increment' value.product_id %}"> <b> + </b> </a>
+              <p>{{value.quantity}}</p>
+              <a href="{% url 'item_decrement' value.product_id %}"> <b> - </b> </a> </td>
+            <td class="text-right">${{value.price}}</td>
+            <td class="text-right"> ${{ value.price|multiply:value.quantity }}</td>
+            
+            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+        </tr>
+        
+    
+        
+      {% endfor %}         
+        </tr>
+					
+
+    </table>
+
+    <form method="post" class="order-form" action="{% url 'store' %}" >
+        {% csrf_token %}
+     
+         <input type="submit" value="Save Record">
+     
+     </form>
+    
+    </body>

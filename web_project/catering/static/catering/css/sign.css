@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+     font-family: arial;
+}
+.form_wrapper{
+    margin: 0px auto;
+    width: 100%;
+}
+
+h1{
+	text-align: center;
+
+}
